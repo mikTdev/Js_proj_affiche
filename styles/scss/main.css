@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "Hyrbo";
+  src: url("fonts/Hyrbo-Bold.otf");
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/BarlowCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "Chicago";
+  src: local("Chicago"), url("fonts/ChicagoFLF.ttf") format("truetype"), url("fonts/ChicagoFLF.woff") format("woff"), url("fonts/ChicagoFLF.woff2") format("woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  /* A retirer/modifier */
+  background: linear-gradient(180deg, rgb(31, 32, 66) 0%, rgb(30, 15, 39) 100%);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#entryConveyor {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 220px;
+  left: -58px;
+  z-index: 1;
+}
+
+#exitinfoBox {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 650px;
+  left: 460px;
+  z-index: 5;
+}
+
+.affiche-container {
+  width: 70vh;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  cursor: url("cursors/customCursorWhite_v2.svg") 8 8, auto;
+}
+
+#boxA {
+  width: 810px;
+  height: 1200px;
+}
+
+#boxB {
+  background: linear-gradient(0deg, rgb(169, 81, 154) 0%, rgb(122, 110, 176) 33%, rgb(45, 88, 165) 66%, rgb(57, 66, 117) 100%);
+  width: 78%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  top: -63px;
+}
+
+#bubbleBackground {
+  position: absolute;
+  width: 632px;
+  height: 784px;
+  -o-object-fit: none;
+     object-fit: none;
+  top: 0px;
+  left: 0px;
+}
+
+#logoMuseum {
+  position: absolute;
+  top: 820px;
+  left: -41px;
+  width: 61%;
+  z-index: 10;
+}
+
+#titleWorkshop,
+#titleSusan,
+#titleKare,
+#titleAniSusan,
+#titleAniKare {
+  font-family: "Hyrbo";
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px #70577D;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#titleAniSusan,
+#titleAniKare {
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
+#titleWorkshop {
+  font-size: 11em;
+  position: relative;
+  top: -12px;
+  left: 0px;
+  z-index: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+#titleSusan {
+  font-size: 8em;
+  position: relative;
+  top: -1980px;
+  left: 344px;
+}
+
+#titleKare {
+  font-size: 11.5em;
+  position: relative;
+  top: -2070px;
+  left: 295px;
+}
+
+#titleAniSusan {
+  font-size: 10em;
+  position: absolute;
+  top: 38px;
+  left: -62px;
+  text-shadow: #A9519A 1px 1px 1px;
+  z-index: 5;
+  opacity: 0;
+}
+
+#titleAniKare {
+  font-size: 9.5em;
+  position: absolute;
+  top: 152.5px;
+  left: 354px;
+  text-shadow: #A9519A 1px 1px 1px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.gradientHyrbo {
+  text-shadow: #394275;
+}
+
+#titleRetro {
+  font-family: "Chicago", sans-serif;
+  font-size: 5em;
+  color: white;
+  position: absolute;
+  top: -12px;
+  left: -50px;
+  z-index: 1;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#titleShadowRetroLeft {
+  font-family: "Chicago", sans-serif;
+  font-size: 5em;
+  position: relative;
+  top: -12px;
+  left: -56px;
+  z-index: 0;
+  opacity: 0.8;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: -6px 0px linear-gradient(0deg, rgb(169, 81, 154) 0%, rgb(122, 110, 176) 50%, rgb(45, 88, 165) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#titleShadowRetroRight {
+  font-family: "Chicago", sans-serif;
+  font-size: 5em;
+  position: relative;
+  top: -114px;
+  left: -46px;
+  z-index: 0;
+  opacity: 0.8;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: -6px 0px linear-gradient(0deg, rgb(169, 81, 154) 0%, rgb(122, 110, 176) 50%, rgb(45, 88, 165) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.infoBox {
+  position: relative;
+  top: -2004px;
+  left: 441px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 10;
+}
+
+.infoExpoTown,
+.infoExpoDate,
+.infoExpoAddress,
+.whiteLine {
+  font-family: "Barlow", sans-serif;
+  color: white;
+  text-shadow: 3px 2.5px #442A5B;
+}
+
+.infoExpoTown {
+  font-size: 4.75em;
+}
+
+.infoExpoDate {
+  font-size: 3.25em;
+  line-height: 85%;
+  position: relative;
+  top: 15px;
+  left: 0px;
+}
+
+.infoExpoAddress {
+  font-size: 2em;
+  line-height: 85%;
+  position: relative;
+  top: 34px;
+  left: 0px;
+}
+
+.whiteLine {
+  height: 3.5px;
+  width: 145px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 2.5px #442A5B;
+}
+
+.infoExpoTown + .whiteLine {
+  position: relative;
+  top: 8px;
+  left: 7px;
+}
+
+.infoExpoDate + .whiteLine {
+  position: relative;
+  top: 27px;
+  left: 7px;
+}
+
+#screenEffect {
+  position: absolute;
+  top: 420px;
+  left: 442px;
+  z-index: 4;
+  opacity: 0;
+  background: red;
+  width: 180px;
+  height: 315px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  grid-column-gap: 0.9px;
+  grid-row-gap: 0.9px;
+}
+
+#screenEffect > div {
+  background: white;
+  border-width: thin;
+  opacity: 0;
+}
+
+#prod1,
+#prod2,
+#prod3,
+#prodcoude {
+  width: 65%;
+  height: 65%;
+}
+
+#scanportal {
+  position: absolute;
+  top: 40px;
+  left: -54.895px;
+  z-index: 4;
+  width: 83.5%;
+}
+
+#prod1 {
+  position: relative;
+  top: -198px;
+  left: -109px;
+}
+
+#prod2 {
+  position: relative;
+  top: -657px;
+  left: 115px;
+}
+
+#prod3 {
+  position: relative;
+  top: -1460px;
+  left: 69px;
+}
+
+#prodcoude {
+  position: relative;
+  top: -985px;
+  left: 431px;
+}
+
+#scanportalRightPart {
+  position: absolute;
+  top: 40px;
+  left: -55px;
+  z-index: 0;
+  width: 83.5%;
+}
+
+#pathprod1prod2 {
+  overflow: visible;
+  height: 100%;
+  max-width: 100%;
+}
+
+#pathprod1prod2 {
+  position: absolute;
+  top: 43px;
+  left: -103px;
+}
+
+#pathprod3 {
+  overflow: visible;
+  height: 100%;
+  max-width: 100%;
+}
+
+#pathprod3 {
+  position: absolute;
+  top: 220px;
+  left: 29px;
+}
+
+#littleBubbleEP_1,
+#littleBubbleEP_2,
+#littleBubbleEP_3,
+#littleBubbleEP_4 {
+  width: 15px;
+  height: 15px;
+  background-color: "none";
+  position: absolute;
+}
+
+#littleBubbleEP_1 {
+  top: 933px;
+  left: -51px;
+}
+
+#littleBubbleEP_2 {
+  top: 933px;
+  left: 0px;
+}
+
+#littleBubbleEP_3 {
+  top: 933px;
+  left: 51px;
+}
+
+#littleBubbleEP_4 {
+  top: 933px;
+  left: 100px;
+}/*# sourceMappingURL=main.css.map */

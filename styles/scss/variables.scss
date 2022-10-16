@@ -1,0 +1,33 @@
+// Colors
+$color-body: linear-gradient(180deg, rgba(31,32,66,1) 0%, rgba(30,15,39,1) 100%);
+$color-div: linear-gradient(180deg, rgba(31,32,66,1) 0%, rgba(30,15,39,1) 100%);
+$color-boxB: linear-gradient(0deg, rgba(169,81,154,1) 0%, rgba(122,110,176,1) 33%, rgba(45,88,165,1) 66%, rgba(57,66,117,1) 100%);;
+$color-titleWSK: #70577D; 
+$color-titleRetro: white;
+$color-titleRetroShadow: linear-gradient(0deg, rgba(169,81,154,1) 0%, rgba(122,110,176,1) 50%, rgba(45,88,165,1) 100%);
+$color-titleRetroShadowRight: #442A5B;
+$color-pixelScreenEffect:red;
+
+// Fonts
+  @font-face {
+    font-family: "Hyrbo";
+    src: url("fonts/Hyrbo-Bold.otf");
+    // font-stretch: 150%;
+  }
+
+  @font-face {
+    font-family: "Barlow";
+    src: url("fonts/BarlowCondensed-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Chicago";
+    src: local("Chicago"), 
+    url("fonts/ChicagoFLF.ttf") format("truetype"),
+    url("fonts/ChicagoFLF.woff") format("woff"),
+    url("fonts/ChicagoFLF.woff2") format("woff2");
+    // font-stretch: 150%;
+  }
+
+
+

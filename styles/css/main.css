@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Hyrbo";
+  src: url("fonts/Hyrbo-Bold.otf");
+  font-stretch: 150%; }
+
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/BarlowCondensed-Regular.ttf"); }
+
+@font-face {
+  font-family: "Chicago";
+  src: local("Chicago"), url("fonts/ChicagoFLF.ttf") format("truetype"), url("fonts/ChicagoFLF.woff") format("woff"), url("fonts/ChicagoFLF.woff2") format("woff2");
+  font-stretch: 150%; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(180deg, #1f2042 0%, #1e0f27 100%);
+  /* A retirer/modifier */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border: dashed red; }
+
+.affiche-container {
+  background: linear-gradient(180deg, #1f2042 0%, #1e0f27 100%);
+  /* A retirer/modifier */
+  width: 70vh;
+  height: 100vh;
+  margin: auto; }
+
+#boxA {
+  width: auto;
+  height: 100%;
+  border: dashed green; }
+
+#boxB {
+  background: linear-gradient(0deg, #a9519a 0%, #7a6eb0 33%, #2d58a5 66%, #394275 100%);
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  top: -63px;
+  border: dashed blue; }
+
+#titleWorkshop, #titleSusan, #titleKare {
+  font-family: "Hyrbo";
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px #70577D; }
+
+#titleWorkshop {
+  font-size: 11em;
+  position: relative;
+  top: -12px;
+  left: 0px;
+  z-index: 0;
+  justify-content: center;
+  text-align: center; }
+
+#titleSusan {
+  font-size: 7em;
+  position: relative;
+  top: 0px;
+  left: 500px; }
+
+#titleKare {
+  font-size: 7em;
+  position: relative;
+  top: 0px;
+  left: 500px; }
+
+#titleRetro {
+  font-family: "Chicago", sans-serif;
+  font-size: 3em;
+  color: white;
+  text-shadow: 6px 0px #442A5B; }
+
+#titleShadowEtro {
+  font-family: "Chicago", sans-serif;
+  font-size: 5em;
+  text-shadow: -6px 0px linear-gradient(0deg, #a9519a 0%, #7a6eb0 50%, #2d58a5 100%); }
+
+.infoBox {
+  border: dashed grey; }
+
+.infoBox, .infoExpoTown, .infoExpoDate, .infoExpoAddress {
+  font-family: "Barlow", sans-serif;
+  color: white; }
+
+.testA {
+  font-family: "Chicago", sans-serif;
+  font-size: 5em;
+  color: white; }
+
+#prod1, #prod2, #prod3, #prodcoude {
+  width: 50%;
+  height: 50%; }

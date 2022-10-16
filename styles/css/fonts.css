@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Hyrbo";
+    src: url("font/Hyrbo-Bold.otf");
+  }
+  
+  @font-face {
+    font-family: "Chicago";
+    src: url("font/ChicagoFLF.ttf");
+  }
+  
+  @font-face {
+    font-family: "Barlow";
+    src: url("font/BarlowCondensed-Regular.ttf");
+  }

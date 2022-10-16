@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Hyrbo";
+  src: url("fonts/Hyrbo-Bold.otf");
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/BarlowCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "Chicago";
+  src: local("Chicago"), url("fonts/ChicagoFLF.ttf") format("truetype"), url("fonts/ChicagoFLF.woff") format("woff"), url("fonts/ChicagoFLF.woff2") format("woff2");
+}/*# sourceMappingURL=variables.css.map */

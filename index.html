@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Affiche avec GSAP</title>
+    <link rel="stylesheet" href="styles/scss/main.css">
+    
+    
+</head>
+<body>
+    <div class="affiche-container">
+        <!-- Contenu de l'affiche ici -->
+        <!-- <h1 style="transform: translateX(-1100px)">Ce titre bouge tout seul avec GSAP !</h1> -->
+        <div id="boxA"> 
+            <div id="titleWorkshop">workshop</div>
+              <div id="boxB">
+                <img src="ress/pict/bubble/bullebounce.gif" alt="bulles" id="bubbleBackground">
+                <div id="titleRetro">Rétro pixel 2022</div>
+                <div id="titleShadowRetroLeft">Rétro pixel 2022</div>
+                <div id="titleShadowRetroRight">Rétro pixel 2022</div>
+                <div id="entryConveyor"></div>
+                <img id="prod1" src="ress/pict/line/prod1woscanportal.svg" alt="">
+                <img id="scanportal" src="ress/pict/line/scanportalLeftPart.svg" alt="">
+                <img id="prod2" src="ress/pict/line/prod2.svg"alt="">
+                <img id="prodcoude" src="ress/pict/line/prodcoude.svg" alt="">
+                <img id="prod3" src="ress/pict/line/prod3.svg" alt="">
+                <div class="infoBox"> 
+                    <div class="infoExpoTown">Lyon</div>
+                    <div class="whiteLine"></div>
+                    <div class="infoExpoDate">19 Sept<br>au<br>1er Nov<br>2022</div>
+                    <div class="whiteLine"></div>
+                    <div class="infoExpoAddress">13 rue<br>de la<br>Poulaillerie<br>69002</div>
+                </div>
+                <!-- <div id="logoMuseum"></div> -->
+                <img src="ress/pict/logo_officiel.svg" alt="museum" id="logoMuseum">
+            <div id="titleSusan">susan</div>
+            <div id="titleKare">kare</div>
+            <div id="exitinfoBox"></div>
+            <svg id="pathprod1prod2"  x="300" y="300"  width="100%" height="100%" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                <g id="">
+                    <path id="toinfobox" d="M24.279,98.663L107.915,157.211L229.495,90.481L504.279,265.027" style="fill:none;stroke:none;stroke-width:2px;"/>
+                </g>
+            </svg>
+            <svg id="pathprod3" width="100%" height="100%" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                <g id="">
+                    <path id="frominfobox" d="M385.932,334.443L354.543,347.481L224.161,265.871" style="fill:none;stroke:none;stroke-width:1px;"/>
+                </g>
+            </svg>
+            <div id="littleBubbleEP_1"></div>
+            <div id="littleBubbleEP_2"></div>
+            <div id="littleBubbleEP_3"></div>
+            <div id="littleBubbleEP_4"></div>
+            <img id="scanportalRightPart" src="ress/pict/line/scanportalRightPart.svg" alt="">
+            <div id="screenEffect">
+                <div class="A0"></div>
+                <div class="A1"></div>
+                <div class="A2"></div>
+                <div class="A3"></div>
+                <div class="A4"></div>
+                <div class="A5"></div>
+                <div class="A6"></div>
+                <div class="A7"></div>
+                <div class="A8"></div>
+                <div class="A9"></div>
+                <div class="A10"></div>
+                <div class="A11"></div>
+                <div class="B0"></div>
+                <div class="B1"></div>
+                <div class="B2"></div>
+                <div class="B3"></div>
+                <div class="B4"></div>
+                <div class="B5"></div>
+                <div class="B6"></div>
+                <div class="B7"></div>
+                <div class="B8"></div>
+                <div class="B9"></div>
+                <div class="B10"></div>
+                <div class="B11"></div>
+                <div class="C0"></div>
+                <div class="C1"></div>
+                <div class="C2"></div>
+                <div class="C3"></div>
+                <div class="C4"></div>
+                <div class="C5"></div>
+                <div class="C6"></div>
+                <div class="C7"></div>
+                <div class="C8"></div>
+                <div class="C9"></div>
+                <div class="C10"></div>
+                <div class="C11"></div>
+                <div class="D0"></div>
+                <div class="D1"></div>
+                <div class="D2"></div>
+                <div class="D3"></div>
+                <div class="D4"></div>
+                <div class="D5"></div>
+                <div class="D6"></div>
+                <div class="D7"></div>
+                <div class="D8"></div>
+                <div class="D9"></div>
+                <div class="D10"></div>
+                <div class="D11"></div>
+                <div class="E0"></div>
+                <div class="E1"></div>
+                <div class="E2"></div>
+                <div class="E3"></div>
+                <div class="E4"></div>
+                <div class="E5"></div>
+                <div class="E6"></div>
+                <div class="E7"></div>
+                <div class="E8"></div>
+                <div class="E9"></div>
+                <div class="E10"></div>
+                <div class="E11"></div>
+                <div class="F0"></div>
+                <div class="F1"></div>
+                <div class="F2"></div>
+                <div class="F3"></div>
+                <div class="F4"></div>
+                <div class="F5"></div>
+                <div class="F6"></div>
+                <div class="F7"></div>
+                <div class="F8"></div>
+                <div class="F9"></div>
+                <div class="F10"></div>
+                <div class="F11"></div>
+                <div class="G0"></div>
+                <div class="G1"></div>
+                <div class="G2"></div>
+                <div class="G3"></div>
+                <div class="G4"></div>
+                <div class="G5"></div>
+                <div class="G6"></div>
+                <div class="G7"></div>
+                <div class="G8"></div>
+                <div class="G9"></div>
+                <div class="G10"></div>
+                <div class="G11"></div>
+                <div class="H0"></div>
+                <div class="H1"></div>
+                <div class="H2"></div>
+                <div class="H3"></div>
+                <div class="H4"></div>
+                <div class="H5"></div>
+                <div class="H6"></div>
+                <div class="H7"></div>
+                <div class="H8"></div>
+                <div class="H9"></div>
+                <div class="H10"></div>
+                <div class="H11"></div>
+                <div class="I0"></div>
+                <div class="I1"></div>
+                <div class="I2"></div>
+                <div class="I3"></div>
+                <div class="I4"></div>
+                <div class="I5"></div>
+                <div class="I6"></div>
+                <div class="I7"></div>
+                <div class="I8"></div>
+                <div class="I9"></div>
+                <div class="I10"></div>
+                <div class="I11"></div>
+                <div class="J0"></div>
+                <div class="J1"></div>
+                <div class="J2"></div>
+                <div class="J3"></div>
+                <div class="J4"></div>
+                <div class="J5"></div>
+                <div class="J6"></div>
+                <div class="J7"></div>
+                <div class="J8"></div>
+                <div class="J9"></div>
+                <div class="J10"></div>
+                <div class="J11"></div>
+                <div class="K0"></div>
+                <div class="K1"></div>
+                <div class="K2"></div>
+                <div class="K3"></div>
+                <div class="K4"></div>
+                <div class="K5"></div>
+                <div class="K6"></div>
+                <div class="K7"></div>
+                <div class="K8"></div>
+                <div class="K9"></div>
+                <div class="K10"></div>
+                <div class="K11"></div>
+                <div class="L0"></div>
+                <div class="L1"></div>
+                <div class="L2"></div>
+                <div class="L3"></div>
+                <div class="L4"></div>
+                <div class="L5"></div>
+                <div class="L6"></div>
+                <div class="L7"></div>
+                <div class="L8"></div>
+                <div class="L9"></div>
+                <div class="L10"></div>
+                <div class="L11"></div>
+                <div class="M0"></div>
+                <div class="M1"></div>
+                <div class="M2"></div>
+                <div class="M3"></div>
+                <div class="M4"></div>
+                <div class="M5"></div>
+                <div class="M6"></div>
+                <div class="M7"></div>
+                <div class="M8"></div>
+                <div class="M9"></div>
+                <div class="M10"></div>
+                <div class="M11"></div>
+                <div class="N0"></div>
+                <div class="N1"></div>
+                <div class="N2"></div>
+                <div class="N3"></div>
+                <div class="N4"></div>
+                <div class="N5"></div>
+                <div class="N6"></div>
+                <div class="N7"></div>
+                <div class="N8"></div>
+                <div class="N9"></div>
+                <div class="N10"></div>
+                <div class="N11"></div>
+                <div class="O0"></div>
+                <div class="O1"></div>
+                <div class="O2"></div>
+                <div class="O3"></div>
+                <div class="O4"></div>
+                <div class="O5"></div>
+                <div class="O6"></div>
+                <div class="O7"></div>
+                <div class="O8"></div>
+                <div class="O9"></div>
+                <div class="O10"></div>
+                <div class="O11"></div>
+                <div class="P0"></div>
+                <div class="P1"></div>
+                <div class="P2"></div>
+                <div class="P3"></div>
+                <div class="P4"></div>
+                <div class="P5"></div>
+                <div class="P6"></div>
+                <div class="P7"></div>
+                <div class="P8"></div>
+                <div class="P9"></div>
+                <div class="P10"></div>
+                <div class="P11"></div>
+                <div class="Q0"></div>
+                <div class="Q1"></div>
+                <div class="Q2"></div>
+                <div class="Q3"></div>
+                <div class="Q4"></div>
+                <div class="Q5"></div>
+                <div class="Q6"></div>
+                <div class="Q7"></div>
+                <div class="Q8"></div>
+                <div class="Q9"></div>
+                <div class="Q10"></div>
+                <div class="Q11"></div>
+                <div class="R0"></div>
+                <div class="R1"></div>
+                <div class="R2"></div>
+                <div class="R3"></div>
+                <div class="R4"></div>
+                <div class="R5"></div>
+                <div class="R6"></div>
+                <div class="R7"></div>
+                <div class="R8"></div>
+                <div class="R9"></div>
+                <div class="R10"></div>
+                <div class="R11"></div>
+                <div class="S0"></div>
+                <div class="S1"></div>
+                <div class="S2"></div>
+                <div class="S3"></div>
+                <div class="S4"></div>
+                <div class="S5"></div>
+                <div class="S6"></div>
+                <div class="S7"></div>
+                <div class="S8"></div>
+                <div class="S9"></div>
+                <div class="S10"></div>
+                <div class="S11"></div>
+                <div class="T0"></div>
+                <div class="T1"></div>
+                <div class="T2"></div>
+                <div class="T3"></div>
+                <div class="T4"></div>
+                <div class="T5"></div>
+                <div class="T6"></div>
+                <div class="T7"></div>
+                <div class="T8"></div>
+                <div class="T9"></div>
+                <div class="T10"></div>
+                <div class="T11"></div>
+                <div class="U0"></div>
+                <div class="U1"></div>
+                <div class="U2"></div>
+                <div class="U3"></div>
+                <div class="U4"></div>
+                <div class="U5"></div>
+                <div class="U6"></div>
+                <div class="U7"></div>
+                <div class="U8"></div>
+                <div class="U9"></div>
+                <div class="U10"></div>
+                <div class="U11"></div>
+        </div>
+        <div id="titleAniSusan">susan</div>
+        <div id="titleAniKare">kare</div>
+    </div>
+
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/gsap/dist/Flip.min.js"></script>
+    <script src="node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="node_modules/gsap/dist/Observer.min.js"></script>
+    <script src="node_modules/gsap/dist/ScrollToPlugin.min.js"></script>
+    <script src="node_modules/gsap/dist/Draggable.min.js"></script>
+    <script src="node_modules/gsap/dist/EaselPlugin.min.js"></script>
+    <script src="node_modules/gsap/dist/MotionPathPlugin.min.js"></script>
+    <script src="node_modules/gsap/dist/PixiPlugin.min.js"></script>
+    <script src="node_modules/gsap/dist/TextPlugin.min.js"></script>
+    <script src="node_modules/gsap/dist/EasePack.min.js"></script>
+    <script src="node_modules/gsap/dist/CustomEase.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+// Import du fichier variables.scss
+@import "variables";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+body {
+    /* A retirer/modifier */
+    background: $color-body;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#entryConveyor {
+    width: 10px;
+    height: 10px;
+    // background-color: red;
+    position: absolute;
+    top: 220px;
+    left: -58px;
+    z-index: 1;
+}
+
+#exitinfoBox {
+    width: 10px;
+    height: 10px;
+    // background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 650px;
+    left: 460px;
+    z-index: 5;
+}
+
+.affiche-container {
+    // background: $color-body; /* A retirer/modifier */
+    width: 70vh;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    cursor: url('cursors/customCursorWhite_v2.svg') 8 8, auto;
+    // border: dashed white;
+}
+
+#boxA {
+    width: 810px;
+    height: 1200px;
+    // border: dashed green;
+}
+
+#boxB {
+    background: $color-boxB;
+    width: 78%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    top: -63px;
+    // border: dashed blue;
+}
+
+#bubbleBackground {
+    position: absolute;
+    width: 632px;
+    height: 784px;
+    object-fit: none;
+    top: 0px;
+    left: 0px;
+}
+
+#logoMuseum {
+    position: absolute;
+    top: 820px;
+    left: -41px;
+    width: 61%;
+    z-index: 10;
+}
+
+#titleWorkshop,
+#titleSusan,
+#titleKare,
+#titleAniSusan,
+#titleAniKare {
+    font-family: "Hyrbo";
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .5px $color-titleWSK;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#titleAniSusan,
+#titleAniKare {
+    -webkit-text-stroke: .5px #ffffff;
+}
+
+
+#titleWorkshop {
+    font-size: 11em;
+    position: relative;
+    top: -12px;
+    left: 0px;
+    z-index: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#titleSusan {
+    font-size: 8em;
+    position: relative;
+    top: -1980px;
+    left: 344px;
+}
+
+#titleKare {
+    font-size: 11.5em;
+    position: relative;
+    top: -2070px;
+    left: 295px;
+}
+
+#titleAniSusan {
+    font-size: 10em;
+    position: absolute;
+    top: 38px;
+    left: -62px;
+    text-shadow: #A9519A 1px 1px 1px;
+    z-index: 5;
+    opacity: 0;
+}
+
+#titleAniKare {
+    font-size: 9.5em;
+    position: absolute;
+    top: 152.5px;
+    left: 354px;
+    text-shadow: #A9519A 1px 1px 1px;
+    z-index: 5;
+    opacity: 0;
+}
+
+.gradientHyrbo {
+//   background: -webkit-linear-gradient( #7A6EB0, #394275);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+text-shadow:  #394275;
+}
+
+
+// RETROPIXEL 2022
+
+#titleRetro {
+    font-family: "Chicago", sans-serif;
+    font-size: 5em;
+    color: $color-titleRetro;
+    position: absolute;
+    top: -12px;
+    left: -50px;
+    z-index: 1;
+    justify-content: center;
+    width: max-content;
+}
+
+#titleShadowRetroLeft {
+    font-family: "Chicago", sans-serif;
+    font-size: 5em;
+    position: relative;
+    top: -12px;
+    left: -56px;
+    z-index: 0;
+    opacity: 0.8;
+    justify-content: center;
+    width: max-content;
+    background: -6px 0px $color-titleRetroShadow;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#titleShadowRetroRight {
+    font-family: "Chicago", sans-serif;
+    font-size: 5em;
+    position: relative;
+    top: -114px;
+    left: -46px;
+    z-index: 0;
+    opacity: 0.8;
+    justify-content: center;
+    width: max-content;
+    background: -6px 0px $color-titleRetroShadow;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// INFOBOX TOWN -- DATE -- ADDRESS
+
+.infoBox {
+    position: relative;
+    top: -2004px;
+    left: 441px;
+    width: fit-content;
+    z-index: 10;
+    // border: dashed grey;
+}
+
+.infoExpoTown,
+.infoExpoDate,
+.infoExpoAddress,
+.whiteLine {
+    font-family: "Barlow", sans-serif;
+    color: $color-titleRetro;
+    text-shadow: 3px 2.5px $color-titleRetroShadowRight;
+}
+
+.infoExpoTown {
+    font-size: 4.75em;
+}
+
+.infoExpoDate {
+    font-size: 3.25em;
+    line-height: 85%;
+    position: relative;
+    top: 15px;
+    left: 0px;
+}
+
+.infoExpoAddress {
+    font-size: 2em;
+    line-height: 85%;
+    position: relative;
+    top: 34px;
+    left: 0px;
+}
+
+.whiteLine {
+    height: 3.5px;
+    width: 145px;
+    border-radius: 10px;
+    background-color: $color-titleRetro;
+    box-shadow: 3px 2.5px $color-titleRetroShadowRight;
+}
+
+.infoExpoTown+.whiteLine {
+    position: relative;
+    top: 8px;
+    left: 7px;
+}
+
+.infoExpoDate+.whiteLine {
+    position: relative;
+    top: 27px;
+    left: 7px;
+}
+
+// SCREEN EFFECT | SIZE SCREEN 160px x 420px | SIZE PIXEL 20x20 
+
+#screenEffect {
+    position: absolute;
+    top: 420px;
+    left: 442px;
+    z-index: 4;
+    opacity: 0;
+    // background: $color-boxB;
+    background: $color-pixelScreenEffect;
+    width: 180px;
+    height: 315px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    grid-column-gap: 0.9px;
+    grid-row-gap: 0.9px;
+
+}
+
+#screenEffect>div {
+    background: $color-titleRetro;
+    border-width: thin;
+    // border-color: red;
+    opacity: 0;
+}
+
+// LIGNES DE PRODUCTION
+
+#prod1,
+#prod2,
+#prod3,
+#prodcoude {
+    width: 65%;
+    height: 65%;
+}
+
+#scanportal {
+    position: absolute;
+    top: 40px;
+    left: -54.895px;
+    z-index: 4;
+    width: 83.5%;
+}
+
+#prod1 {
+    position: relative;
+    top: -198px;
+    left: -109px;
+}
+
+#prod2 {
+    position: relative;
+    top: -657px;
+    left: 115px;
+
+
+}
+
+#prod3 {
+    position: relative;
+    top: -1460px;
+    left: 69px;
+
+}
+
+#prodcoude {
+    position: relative;
+    top: -985px;
+    left: 431px;
+}
+
+#scanportalRightPart {
+    position: absolute;
+    top: 40px;
+    left: -55px;
+    z-index: 0;
+    width: 83.5%;
+}
+
+
+
+// SVG path conveyor
+
+
+#pathprod1prod2 {
+    overflow: visible;
+    height: 100%;
+    max-width: 100%;
+}
+
+#pathprod1prod2 {
+    position: absolute;
+    top: 43px;
+    left: -103px;
+}
+
+#pathprod3 {
+    overflow: visible;
+    height: 100%;
+    max-width: 100%;
+}
+
+#pathprod3 {
+    position: absolute;
+    top: 220px;
+    left: 29px;
+}
+
+// #logoMuseum {
+//     z-index: 3;
+// }
+
+// .bubble {
+//     z-index: 1;
+// }
+
+#littleBubbleEP_1,
+#littleBubbleEP_2,
+#littleBubbleEP_3,
+#littleBubbleEP_4 {
+    width: 15px;
+    height: 15px;
+    background-color: "none";
+    position: absolute;
+    // z-index: 0;
+}
+
+#littleBubbleEP_1 {
+    top: 933px;
+    left: -51px;
+}
+
+#littleBubbleEP_2 {
+    top: 933px;
+    left: 0px;
+}
+
+#littleBubbleEP_3 {
+    top: 933px;
+    left: 51px;
+}
+
+#littleBubbleEP_4 {
+    top: 933px;
+    left: 100px;
+}
